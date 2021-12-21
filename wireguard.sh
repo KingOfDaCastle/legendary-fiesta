@@ -129,3 +129,4 @@ echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo deb
 echo iptables-persistent iptables-persistent/autosave_v6 boolean false | sudo debconf-set-selections
 sudo apt install iptables-persistent -y
 sudo iptables-save | sudo tee /etc/iptables/rules.v4
+sudo reboot
